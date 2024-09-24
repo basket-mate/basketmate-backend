@@ -54,6 +54,7 @@ dependencies {
     testImplementation 'org.springframework.security:spring-security-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+    
 //Firebase 의존성
     implementation 'com.google.firebase:firebase-admin:7.1.1'
 

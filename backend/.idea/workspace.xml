@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b7e48b-1662-4aa3-81d3-60bb4ba6bff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,8 @@
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
-        <option value="dev\|main" />
+        <option value="dev" />
+        <option value="main" />
       </list>
     </option>
   </component>
@@ -139,7 +141,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "terminal",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -191,21 +193,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
-      <option name="INTERPRETER_PATH" value="$PROJECT_DIR$/../../../../../../../Program Files/Git/bin/bash.exe" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
       <method v="2" />
     </configuration>
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -260,6 +247,8 @@
       <workItem from="1725793745405" duration="3985000" />
       <workItem from="1727144844456" duration="2291000" />
       <workItem from="1727147239165" duration="3125000" />
+      <workItem from="1727175404754" duration="4365000" />
+      <workItem from="1727181183368" duration="1126000" />
     </task>
     <servers />
   </component>
