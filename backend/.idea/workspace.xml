@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8b7e48b-1662-4aa3-81d3-60bb4ba6bff1" name="Changes" comment="" />
+    <list default="true" id="c8b7e48b-1662-4aa3-81d3-60bb4ba6bff1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/controller/UserController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +200,7 @@
       <updated>1725793744389</updated>
       <workItem from="1725793745405" duration="3985000" />
       <workItem from="1727144844456" duration="2291000" />
-      <workItem from="1727147239165" duration="1046000" />
+      <workItem from="1727147239165" duration="1297000" />
     </task>
     <servers />
   </component>
