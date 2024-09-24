@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b7e48b-1662-4aa3-81d3-60bb4ba6bff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +58,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jang643"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jang643&quot;
   }
-}]]></component>
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="testaa" />
+                    <option name="lastUsedInstant" value="1727152091" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1727151620" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1727151570" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
@@ -71,17 +100,19 @@
       </list>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/basket-mate/basketmate-backend.git",
-    "accountId": "0b1ddf15-9c62-488e-b1de-f791c37ca0fc"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/basket-mate/basketmate-backend.git&quot;,
+    &quot;accountId&quot;: &quot;0b1ddf15-9c62-488e-b1de-f791c37ca0fc&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2lmmhJb9CT2B83AN8OeBT5kVlpm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -97,8 +128,9 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.BackendApplication.executor": "Run",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "testaa",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/upsil/Desktop/2024/캡디/backend/backend/.github",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,6 +143,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\upsil\Desktop\2024\캡디\backend\backend\.github" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.BackendApplication">
     <configuration name="backend [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -154,6 +191,21 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+      <option name="INTERPRETER_PATH" value="$PROJECT_DIR$/../../../../../../../Program Files/Git/bin/bash.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
