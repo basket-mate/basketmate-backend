@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b7e48b-1662-4aa3-81d3-60bb4ba6bff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +64,13 @@
     "assignee": "jang643"
   }
 }]]></component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="dev\|main" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/basket-mate/basketmate-backend.git",
@@ -201,7 +207,7 @@
       <updated>1725793744389</updated>
       <workItem from="1725793745405" duration="3985000" />
       <workItem from="1727144844456" duration="2291000" />
-      <workItem from="1727147239165" duration="1499000" />
+      <workItem from="1727147239165" duration="3125000" />
     </task>
     <servers />
   </component>
