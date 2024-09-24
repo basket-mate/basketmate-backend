@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8b7e48b-1662-4aa3-81d3-60bb4ba6bff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/basketmate/backend/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +201,7 @@
       <updated>1725793744389</updated>
       <workItem from="1725793745405" duration="3985000" />
       <workItem from="1727144844456" duration="2291000" />
-      <workItem from="1727147239165" duration="1297000" />
+      <workItem from="1727147239165" duration="1499000" />
     </task>
     <servers />
   </component>
