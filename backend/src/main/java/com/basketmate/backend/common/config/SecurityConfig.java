@@ -12,16 +12,14 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .authorizeRequests()
-                .antMatchers("/public/**").permitAll()
-                .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                .loginPage("/login")
-                .permitAll()
-                .and()
-                .logout()
-                .permitAll();
+                .csrf().disable()
+                .formLogin().disable()
+                .httpBasic().disable()
+                .cors().and()
+                .headers().frameOptions().disable()
+                .and().authorizeRequests()
+                .antMatchers("/h2-console/**").permitAll()
+                .anyRequest().authenticated();
 
         return http.build();
     }
