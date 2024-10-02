@@ -1,4 +1,4 @@
-package com.basketmate.backend.user.entity;
+package com.basketmate.backend.product.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -16,13 +16,13 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QProduct extends EntityPathBase<Product> {
 
-    private static final long serialVersionUID = 912759639L;
+    private static final long serialVersionUID = -898481773L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 
     public static final QProduct product = new QProduct("product");
 
-    public final QIngredient ingredient;
+    public final com.basketmate.backend.ingredient.entity.QIngredient ingredient;
 
     public final NumberPath<Long> price = createNumber("price", Long.class);
 
@@ -52,7 +52,7 @@ public class QProduct extends EntityPathBase<Product> {
 
     public QProduct(Class<? extends Product> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.ingredient = inits.isInitialized("ingredient") ? new QIngredient(forProperty("ingredient")) : null;
+        this.ingredient = inits.isInitialized("ingredient") ? new com.basketmate.backend.ingredient.entity.QIngredient(forProperty("ingredient")) : null;
     }
 
 }

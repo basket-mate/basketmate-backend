@@ -1,4 +1,4 @@
-package com.basketmate.backend.user.entity;
+package com.basketmate.backend.video.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -16,7 +16,7 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QVideo extends EntityPathBase<Video> {
 
-    private static final long serialVersionUID = -1191551773L;
+    private static final long serialVersionUID = 1041381907L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 
@@ -24,7 +24,7 @@ public class QVideo extends EntityPathBase<Video> {
 
     public final StringPath dishName = createString("dishName");
 
-    public final QIngredient ingredient;
+    public final com.basketmate.backend.ingredient.entity.QIngredient ingredient;
 
     public final StringPath recipe = createString("recipe");
 
@@ -50,7 +50,7 @@ public class QVideo extends EntityPathBase<Video> {
 
     public QVideo(Class<? extends Video> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.ingredient = inits.isInitialized("ingredient") ? new QIngredient(forProperty("ingredient")) : null;
+        this.ingredient = inits.isInitialized("ingredient") ? new com.basketmate.backend.ingredient.entity.QIngredient(forProperty("ingredient")) : null;
     }
 
 }

@@ -1,4 +1,7 @@
-package com.basketmate.backend.user.entity;
+package com.basketmate.backend.history.entity;
+
+import com.basketmate.backend.user.entity.UserEntity;
+import com.basketmate.backend.product.entity.Product;
 
 import javax.persistence.*;
 

@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.controller;
+package com.basketmate.backend.video.controller;
 
-import com.basketmate.backend.user.entity.Video;
-import com.basketmate.backend.user.service.VideoService;
+import com.basketmate.backend.video.entity.Video;
+import com.basketmate.backend.video.service.VideoService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

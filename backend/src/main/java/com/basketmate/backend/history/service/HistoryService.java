@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.service;
+package com.basketmate.backend.history.service;
 
-import com.basketmate.backend.user.entity.History;
-import com.basketmate.backend.user.repository.HistoryRepository;
+import com.basketmate.backend.history.entity.History;
+import com.basketmate.backend.history.repository.HistoryRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

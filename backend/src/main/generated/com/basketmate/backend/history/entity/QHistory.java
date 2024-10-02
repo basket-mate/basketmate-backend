@@ -1,4 +1,4 @@
-package com.basketmate.backend.user.entity;
+package com.basketmate.backend.history.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -16,7 +16,7 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QHistory extends EntityPathBase<History> {
 
-    private static final long serialVersionUID = -2145799428L;
+    private static final long serialVersionUID = 1847943923L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 
@@ -24,9 +24,9 @@ public class QHistory extends EntityPathBase<History> {
 
     public final NumberPath<Long> historyId = createNumber("historyId", Long.class);
 
-    public final QProduct product;
+    public final com.basketmate.backend.product.entity.QProduct product;
 
-    public final QUserEntity user;
+    public final com.basketmate.backend.user.entity.QUserEntity user;
 
     public final StringPath videoId = createString("videoId");
 
@@ -48,8 +48,8 @@ public class QHistory extends EntityPathBase<History> {
 
     public QHistory(Class<? extends History> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.product = inits.isInitialized("product") ? new QProduct(forProperty("product"), inits.get("product")) : null;
-        this.user = inits.isInitialized("user") ? new QUserEntity(forProperty("user")) : null;
+        this.product = inits.isInitialized("product") ? new com.basketmate.backend.product.entity.QProduct(forProperty("product"), inits.get("product")) : null;
+        this.user = inits.isInitialized("user") ? new com.basketmate.backend.user.entity.QUserEntity(forProperty("user")) : null;
     }
 
 }

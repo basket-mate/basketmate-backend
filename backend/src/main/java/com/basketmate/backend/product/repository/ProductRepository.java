@@ -1,6 +1,6 @@
-package com.basketmate.backend.user.repository;
+package com.basketmate.backend.product.repository;
 
-import com.basketmate.backend.user.entity.Product;
+import com.basketmate.backend.product.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {}

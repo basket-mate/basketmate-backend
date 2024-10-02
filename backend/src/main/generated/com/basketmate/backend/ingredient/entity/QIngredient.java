@@ -1,4 +1,4 @@
-package com.basketmate.backend.user.entity;
+package com.basketmate.backend.ingredient.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QIngredient extends EntityPathBase<Ingredient> {
 
-    private static final long serialVersionUID = -1374868887L;
+    private static final long serialVersionUID = -1439693073L;
 
     public static final QIngredient ingredient = new QIngredient("ingredient");
 

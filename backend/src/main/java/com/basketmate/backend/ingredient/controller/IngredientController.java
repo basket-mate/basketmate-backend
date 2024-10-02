@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.controller;
+package com.basketmate.backend.ingredient.controller;
 
-import com.basketmate.backend.user.entity.Ingredient;
-import com.basketmate.backend.user.service.IngredientService;
+import com.basketmate.backend.ingredient.entity.Ingredient;
+import com.basketmate.backend.ingredient.service.IngredientService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,3 +35,4 @@ public class IngredientController {
         ingredientService.deleteIngredient(id);
     }
 }
+

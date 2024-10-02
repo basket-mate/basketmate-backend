@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.controller;
+package com.basketmate.backend.product.controller;
 
-import com.basketmate.backend.user.entity.Product;
-import com.basketmate.backend.user.service.ProductService;
+import com.basketmate.backend.product.entity.Product;
+import com.basketmate.backend.product.service.ProductService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,4 +35,3 @@ public class ProductController {
         productService.deleteProduct(id);
     }
 }
-

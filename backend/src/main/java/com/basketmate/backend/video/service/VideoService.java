@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.service;
+package com.basketmate.backend.video.service;
 
-import com.basketmate.backend.user.entity.Video;
-import com.basketmate.backend.user.repository.VideoRepository;
+import com.basketmate.backend.video.entity.Video;
+import com.basketmate.backend.video.repository.VideoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

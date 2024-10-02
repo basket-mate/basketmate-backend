@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.controller;
+package com.basketmate.backend.history.controller;
 
-import com.basketmate.backend.user.entity.History;
-import com.basketmate.backend.user.service.HistoryService;
+import com.basketmate.backend.history.entity.History;
+import com.basketmate.backend.history.service.HistoryService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

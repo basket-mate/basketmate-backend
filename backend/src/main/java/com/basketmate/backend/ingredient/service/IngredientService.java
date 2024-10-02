@@ -1,7 +1,7 @@
-package com.basketmate.backend.user.service;
+package com.basketmate.backend.ingredient.service;
 
-import com.basketmate.backend.user.entity.Ingredient;
-import com.basketmate.backend.user.repository.IngredientRepository;
+import com.basketmate.backend.ingredient.entity.Ingredient;
+import com.basketmate.backend.ingredient.repository.IngredientRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

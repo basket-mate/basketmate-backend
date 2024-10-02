@@ -1,4 +1,4 @@
-package com.basketmate.backend.user.entity;
+package com.basketmate.backend.ingredient.entity;
 
 import javax.persistence.*;
 
@@ -16,4 +16,3 @@ public class Ingredient {
 
     // Getters and Setters
 }
-
