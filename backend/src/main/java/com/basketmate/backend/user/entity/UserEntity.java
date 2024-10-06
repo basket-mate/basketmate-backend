@@ -1,5 +1,6 @@
 package com.basketmate.backend.user.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,27 +9,22 @@ import javax.persistence.*;
 
 @Entity
 @Getter
+@AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Table(name = "users")
 public class UserEntity {
 
     @Id
-    @GeneratedValue
-    @Column(name = "user_id")
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "user_id", nullable = false, unique = true)
+    private Long id;
 
+    private String email;
     private String username;
     private String password;
     private String phoneNumber;
     private String address;
     private String detailAddress;
 
-    @Builder
-    public UserEntity(String username, String password, String phoneNumber, String address, String detailAddress) {
-        this.username = username;
-        this.password = password;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
-        this.detailAddress = detailAddress;
-    }
 }
