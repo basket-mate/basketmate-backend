@@ -33,7 +33,7 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .headers().frameOptions().disable()
                 .and()
                 .authorizeRequests()
-                .antMatchers("/api/auth/signup", "/api/auth/login", "/h2-console/**").permitAll()
+                .antMatchers("/api/auth/signup", "/api/auth/login", "/api/video/**", "/h2-console/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);

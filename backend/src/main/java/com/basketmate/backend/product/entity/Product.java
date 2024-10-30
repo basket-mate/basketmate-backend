@@ -1,31 +1,36 @@
 package com.basketmate.backend.product.entity;
 
-import com.basketmate.backend.ingredient.entity.Ingredient;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name = "product")
 public class Product {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productId;
+    @Column(name = "product_id", nullable = false, unique = true)
+    private String productId;
 
-    @Column(nullable = false)
     private String productName;
-
-    @Column(nullable = false)
-    private Long price;
-
-    @Column(nullable = false)
-    private String quantity;
-
-    @Column(nullable = false)
-    private String productDetail;
-
-    @ManyToOne
-    @JoinColumn(name = "ingredient_id", nullable = false)
-    private Ingredient ingredient;
-
-    // Getters and Setters
+    private String className;
+    private BigDecimal price;
+    private String rating;
+    private Integer reviewCount;
+    private String mainCategory;
+    private String subCategory;
+    private String imgUrl;
+    private String size;
+    private String producer;
+    private String importer;
+    private String origin;
+    private String expiration;
 }
-
