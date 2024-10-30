@@ -7,7 +7,6 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
-import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -18,41 +17,46 @@ public class QProduct extends EntityPathBase<Product> {
 
     private static final long serialVersionUID = -898481773L;
 
-    private static final PathInits INITS = PathInits.DIRECT2;
-
     public static final QProduct product = new QProduct("product");
 
-    public final com.basketmate.backend.ingredient.entity.QIngredient ingredient;
+    public final StringPath className = createString("className");
 
-    public final NumberPath<Long> price = createNumber("price", Long.class);
+    public final StringPath expiration = createString("expiration");
 
-    public final StringPath productDetail = createString("productDetail");
+    public final StringPath imgUrl = createString("imgUrl");
 
-    public final NumberPath<Long> productId = createNumber("productId", Long.class);
+    public final StringPath importer = createString("importer");
+
+    public final StringPath mainCategory = createString("mainCategory");
+
+    public final StringPath origin = createString("origin");
+
+    public final NumberPath<java.math.BigDecimal> price = createNumber("price", java.math.BigDecimal.class);
+
+    public final StringPath producer = createString("producer");
+
+    public final StringPath productId = createString("productId");
 
     public final StringPath productName = createString("productName");
 
-    public final StringPath quantity = createString("quantity");
+    public final StringPath rating = createString("rating");
+
+    public final NumberPath<Integer> reviewCount = createNumber("reviewCount", Integer.class);
+
+    public final StringPath size = createString("size");
+
+    public final StringPath subCategory = createString("subCategory");
 
     public QProduct(String variable) {
-        this(Product.class, forVariable(variable), INITS);
+        super(Product.class, forVariable(variable));
     }
 
     public QProduct(Path<? extends Product> path) {
-        this(path.getType(), path.getMetadata(), PathInits.getFor(path.getMetadata(), INITS));
+        super(path.getType(), path.getMetadata());
     }
 
     public QProduct(PathMetadata metadata) {
-        this(metadata, PathInits.getFor(metadata, INITS));
-    }
-
-    public QProduct(PathMetadata metadata, PathInits inits) {
-        this(Product.class, metadata, inits);
-    }
-
-    public QProduct(Class<? extends Product> type, PathMetadata metadata, PathInits inits) {
-        super(type, metadata, inits);
-        this.ingredient = inits.isInitialized("ingredient") ? new com.basketmate.backend.ingredient.entity.QIngredient(forProperty("ingredient")) : null;
+        super(Product.class, metadata);
     }
 
 }

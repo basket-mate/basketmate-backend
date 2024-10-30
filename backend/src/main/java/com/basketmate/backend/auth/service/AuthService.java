@@ -2,6 +2,7 @@ package com.basketmate.backend.auth.service;
 
 import com.basketmate.backend.auth.controller.request.LoginRequest;
 import com.basketmate.backend.auth.controller.request.SignupRequest;
+import com.basketmate.backend.auth.controller.response.LoginResponse;
 import com.basketmate.backend.auth.jwt.service.JwtService;
 import com.basketmate.backend.user.entity.UserEntity;
 import com.basketmate.backend.user.repository.UserRepository;

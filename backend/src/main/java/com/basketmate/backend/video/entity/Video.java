@@ -1,26 +1,30 @@
 package com.basketmate.backend.video.entity;
 
-import com.basketmate.backend.ingredient.entity.Ingredient;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Table(name = "video")
 public class Video {
+
     @Id
+    @Column(name = "video_id", nullable = false, unique = true)
     private String videoId;
 
-    @Column(nullable = false)
     private String title;
-
-    @Column(nullable = false)
     private String dishName;
 
-    @Column(nullable = false)
+    @Column(columnDefinition = "json")
     private String recipe;
 
-    @ManyToOne
-    @JoinColumn(name = "ingredient_id", nullable = false)
-    private Ingredient ingredient;
-
-    // Getters and Setters
+    @Column(columnDefinition = "json")
+    private String ingredient;
 }

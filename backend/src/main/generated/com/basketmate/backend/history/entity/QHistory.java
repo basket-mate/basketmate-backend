@@ -28,7 +28,7 @@ public class QHistory extends EntityPathBase<History> {
 
     public final com.basketmate.backend.user.entity.QUserEntity user;
 
-    public final StringPath videoId = createString("videoId");
+    public final com.basketmate.backend.video.entity.QVideo video;
 
     public QHistory(String variable) {
         this(History.class, forVariable(variable), INITS);
@@ -48,8 +48,9 @@ public class QHistory extends EntityPathBase<History> {
 
     public QHistory(Class<? extends History> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.product = inits.isInitialized("product") ? new com.basketmate.backend.product.entity.QProduct(forProperty("product"), inits.get("product")) : null;
+        this.product = inits.isInitialized("product") ? new com.basketmate.backend.product.entity.QProduct(forProperty("product")) : null;
         this.user = inits.isInitialized("user") ? new com.basketmate.backend.user.entity.QUserEntity(forProperty("user")) : null;
+        this.video = inits.isInitialized("video") ? new com.basketmate.backend.video.entity.QVideo(forProperty("video")) : null;
     }
 
 }

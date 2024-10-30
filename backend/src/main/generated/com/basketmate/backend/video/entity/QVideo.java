@@ -7,7 +7,6 @@ import com.querydsl.core.types.dsl.*;
 import com.querydsl.core.types.PathMetadata;
 import javax.annotation.processing.Generated;
 import com.querydsl.core.types.Path;
-import com.querydsl.core.types.dsl.PathInits;
 
 
 /**
@@ -18,13 +17,11 @@ public class QVideo extends EntityPathBase<Video> {
 
     private static final long serialVersionUID = 1041381907L;
 
-    private static final PathInits INITS = PathInits.DIRECT2;
-
     public static final QVideo video = new QVideo("video");
 
     public final StringPath dishName = createString("dishName");
 
-    public final com.basketmate.backend.ingredient.entity.QIngredient ingredient;
+    public final StringPath ingredient = createString("ingredient");
 
     public final StringPath recipe = createString("recipe");
 
@@ -33,24 +30,15 @@ public class QVideo extends EntityPathBase<Video> {
     public final StringPath videoId = createString("videoId");
 
     public QVideo(String variable) {
-        this(Video.class, forVariable(variable), INITS);
+        super(Video.class, forVariable(variable));
     }
 
     public QVideo(Path<? extends Video> path) {
-        this(path.getType(), path.getMetadata(), PathInits.getFor(path.getMetadata(), INITS));
+        super(path.getType(), path.getMetadata());
     }
 
     public QVideo(PathMetadata metadata) {
-        this(metadata, PathInits.getFor(metadata, INITS));
-    }
-
-    public QVideo(PathMetadata metadata, PathInits inits) {
-        this(Video.class, metadata, inits);
-    }
-
-    public QVideo(Class<? extends Video> type, PathMetadata metadata, PathInits inits) {
-        super(type, metadata, inits);
-        this.ingredient = inits.isInitialized("ingredient") ? new com.basketmate.backend.ingredient.entity.QIngredient(forProperty("ingredient")) : null;
+        super(Video.class, metadata);
     }
 
 }
