@@ -7,20 +7,21 @@ import lombok.Setter;
 @Getter
 @Setter
 public class SignupRequest {
+    private String email;
     private String username;
     private String password;
     private String phoneNumber;
     private String address;
     private String detailAddress;
 
-    // toEntity 메서드를 추가
     public UserEntity toEntity(String encodedPassword) {
         return UserEntity.builder()
-                .username(this.username)
+                .email(email)
+                .username(username)
                 .password(encodedPassword)
-                .phoneNumber(this.phoneNumber)
-                .address(this.address)
-                .detailAddress(this.detailAddress)
+                .phoneNumber(phoneNumber)
+                .address(address)
+                .detailAddress(detailAddress)
                 .build();
     }
 }

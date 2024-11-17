@@ -23,6 +23,8 @@ public class QUserEntity extends EntityPathBase<UserEntity> {
 
     public final StringPath detailAddress = createString("detailAddress");
 
+    public final StringPath email = createString("email");
+
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
     public final StringPath password = createString("password");

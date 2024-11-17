@@ -26,7 +26,6 @@ repositories {
 dependencies {
     // Spring Data JPA, Redis, Security 등
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     implementation 'org.springframework.boot:spring-boot-starter-hateoas'
     implementation 'org.springframework.boot:spring-boot-starter-mail'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
@@ -42,7 +41,7 @@ dependencies {
 
     // 데이터베이스 관련 의존성
     runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'com.mysql:mysql-connector-j'
 
     // Lombok
     compileOnly 'org.projectlombok:lombok'
@@ -64,14 +63,13 @@ dependencies {
     // SpringDoc OpenAPI 의존성
     implementation 'org.springdoc:springdoc-openapi-ui:1.8.0'
 
-    // 테스트 관련 의존성 추가
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'org.junit.platform:junit-platform-launcher'
-    testImplementation 'org.mockito:mockito-core:4.6.1'
-    testImplementation 'org.mockito:mockito-junit-jupiter:4.6.1'
-    testImplementation 'org.mockito:mockito-inline:4.6.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+// 테스트 관련 의존성
+    testImplementation 'org.springframework.boot:spring-boot-starter-test' // JUnit 5 포함
+    testImplementation 'org.mockito:mockito-core'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testImplementation 'org.mockito:mockito-inline'
+
+
 }
 
 tasks.named('test') {
