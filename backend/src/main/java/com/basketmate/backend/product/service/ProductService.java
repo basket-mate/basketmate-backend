@@ -2,31 +2,30 @@ package com.basketmate.backend.product.service;
 
 import com.basketmate.backend.product.entity.Product;
 import com.basketmate.backend.product.repository.ProductRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
+@RequiredArgsConstructor
 public class ProductService {
+
     private final ProductRepository productRepository;
 
-    public ProductService(ProductRepository productRepository) {
-        this.productRepository = productRepository;
-    }
+    public Page<Product> getRecommendedProducts(String sortOption, String mainCategory, String subCategory, int page) {
+        Pageable pageable = PageRequest.of(page, 10);
 
-    public Product saveProduct(Product product) {
-        return productRepository.save(product);
-    }
-
-    public List<Product> getAllProducts() {
-        return productRepository.findAll();
-    }
-
-    public Product getProductById(Long id) {
-        return productRepository.findById(id).orElse(null);
-    }
-
-    public void deleteProduct(Long id) {
-        productRepository.deleteById(id);
+        switch (sortOption) {
+            case "lowPrice":
+                return productRepository.findProductsByCategoriesOrderByPrice(mainCategory, subCategory, pageable);
+            case "mostReviewed":
+                return productRepository.findProductsByCategoriesOrderByReviewCount(mainCategory, subCategory, pageable);
+            case "bestSelling":
+                return productRepository.findProductsByCategoriesOrderByRating(mainCategory, subCategory, pageable);
+            default:
+                throw new IllegalArgumentException("Invalid sort option");
+        }
     }
 }

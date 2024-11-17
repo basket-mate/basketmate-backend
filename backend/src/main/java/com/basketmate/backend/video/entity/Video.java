@@ -16,15 +16,18 @@ import javax.persistence.*;
 public class Video {
 
     @Id
-    @Column(name = "video_id", nullable = false, unique = true)
+    @Column(name = "video_id", nullable = false, unique = true, length = 255)
     private String videoId;
 
+    @Column(name = "title", nullable = false, length = 255)
     private String title;
+
+    @Column(name = "dish_name", nullable = false, length = 255)
     private String dishName;
 
-    @Column(columnDefinition = "json")
+    @Column(name = "recipe", columnDefinition = "JSON")
     private String recipe;
 
-    @Column(columnDefinition = "json")
+    @Column(name = "ingredient", columnDefinition = "JSON")
     private String ingredient;
 }

@@ -33,7 +33,7 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .headers().frameOptions().disable()
                 .and()
                 .authorizeRequests()
-                .antMatchers("/api/auth/signup", "/api/auth/login", "/api/video/**", "/h2-console/**").permitAll()
+                .antMatchers("/api/auth/signup", "/api/auth/login", "/api/video/**", "/api/product/**", "/h2-console/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
@@ -59,7 +59,7 @@ public class SecurityConfig implements WebMvcConfigurer {
     public AuthenticationManager authenticationManager() {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
         provider.setPasswordEncoder(passwordEncoder());
-        provider.setUserDetailsService(loginService); // LoginService를 UserDetailsService로 사용
+        provider.setUserDetailsService(loginService);
         return new ProviderManager(provider);
     }
 }
